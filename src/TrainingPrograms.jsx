@@ -35,6 +35,11 @@ export default function AboutUs() {
     },
 
     {
+      title: "📅 40 Focused Sessions",
+      desc: "Our academy offers a comprehensive program where you can achieve your goals within 40 sessions, which includes both interactive classes for group practice and focused individual sessions for personalized attention.",
+      img: coachingImg,
+    },
+    {
       title: "🤝 Lifetime Support",
       desc: "Our relationship doesn't end with the course. We provide lifetime access to our community and regular alumni catch-up sessions.",
       img: supportImg,
