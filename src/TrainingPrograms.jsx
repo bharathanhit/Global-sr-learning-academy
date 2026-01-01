@@ -28,9 +28,8 @@ export default function AboutUs() {
       desc: (
         <>
           Achieve balanced fluency with all-around training in{" "}
-          <span className="text-blue-600 font-black">
-            Listening, Reading, Writing,<span className="">and</span>  Speaking
-          </span>
+          <span className="text-blue-600 font-black">Listening, Reading, Writing</span>{" "}
+          and <span className="text-blue-600 font-black">Speaking</span>
           —the four core pillars of globally recognized language proficiency.
         </>
       ),
