@@ -15,12 +15,28 @@ export default function AboutUs() {
   const services = [
     {
       title: "🗣️ English through Tamil",
-      desc: "Our unique teaching methodology helps you learn English effortlessly through Tamil, ensuring a comfortable transition and deep understanding of the language.",
+      desc: (
+        <>
+          Our unique teaching methodology helps you learn{" "}
+          <span className="text-blue-600 font-black">
+            English effortlessly through Tamil
+          </span>
+          , ensuring a comfortable transition and deep understanding of the language.
+        </>
+      ),
       img: interactiveImg,
     },
     {
       title: "✍️ Simple Grammar & Vocab",
-      desc: "Forget complex rules. We teach Grammar in a simple, practical way and focus on massive Vocabulary building to help you form sentences with confidence.",
+      desc: (
+        <>
+          Forget complex rules. We teach{" "}
+          <span className="text-blue-600 font-black">Grammar</span> in a simple,
+          practical way and focus on massive{" "}
+          <span className="text-blue-600 font-black">Vocabulary building</span>{" "}
+          to help you form sentences with confidence.
+        </>
+      ),
       img: coachingImg,
     },
     {
@@ -28,7 +44,9 @@ export default function AboutUs() {
       desc: (
         <>
           Achieve balanced fluency with all-around training in{" "}
-          <span className="text-blue-600 font-black">Listening, Reading, Writing</span>{" "}
+          <span className="text-blue-600 font-black">
+            Listening, Reading, Writing
+          </span>{" "}
           and <span className="text-blue-600 font-black">Speaking</span>
           —the four core pillars of globally recognized language proficiency.
         </>
@@ -37,32 +55,96 @@ export default function AboutUs() {
     },
     {
       title: "💼 Professional GD & Interviews",
-      desc: "Stand out in your career with specialized Group Discussion (GD) and Interview training. We prepare you to face corporate challenges with poise and fluency.",
+      desc: (
+        <>
+          Stand out in your career with specialized{" "}
+          <span className="text-blue-600 font-black">
+            Group Discussion (GD)
+          </span>{" "}
+          and <span className="text-blue-600 font-black">Interview training</span>
+          . We prepare you to face corporate challenges with poise and fluency.
+        </>
+      ),
       img: supportImg,
     },
     {
       title: "🔍 Live Professional Evaluation",
-      desc: "Benefit from 'Live' practice sessions and evaluations by external experts. We provide both Internal & External Evaluation with real-time feedback and questions.",
+      desc: (
+        <>
+          Benefit from 'Live' practice sessions and evaluations by external
+          experts. We provide both{" "}
+          <span className="text-blue-600 font-black">
+            Internal & External Evaluation
+          </span>{" "}
+          with real-time feedback and questions.
+        </>
+      ),
       img: coachingImg,
     },
     {
       title: "📅 40 Focused Sessions",
-      desc: "Our academy offers a comprehensive program where you can achieve your goals within 40 sessions, which includes both interactive classes for group practice and focused individual sessions for personalized attention.",
+      desc: (
+        <>
+          Our academy offers a comprehensive program where you can achieve your
+          goals{" "}
+          <span className="text-blue-600 font-black">within 40 sessions</span>,
+          which includes both{" "}
+          <span className="text-blue-600 font-black">interactive classes</span>{" "}
+          for group practice and{" "}
+          <span className="text-blue-600 font-black">
+            focused individual sessions
+          </span>{" "}
+          for personalized attention.
+        </>
+      ),
       img: coachingImg,
     },
     {
       title: "🎯 Personalized Training Sessions",
-      desc: "Get individual attention with one-on-one training sessions tailored to your specific pace. Our instructors focus solely on your growth, identifying areas for improvement and providing instant correction.",
+      desc: (
+        <>
+          Get individual attention with{" "}
+          <span className="text-blue-600 font-black">
+            one-on-one training sessions
+          </span>{" "}
+          tailored to your specific pace. Our instructors focus solely on your
+          growth, identifying areas for improvement and providing instant
+          correction.
+        </>
+      ),
       img: interactiveImg,
     },
     {
       title: "⏰ Flexible Batches",
-      desc: "Study at your convenience with Monday to Friday batches or Weekend Classes. We offer flexible timings and track daily attendance to ensure consistent progress.",
+      desc: (
+        <>
+          Study at your convenience with{" "}
+          <span className="text-blue-600 font-black">
+            Monday to Friday batches
+          </span>{" "}
+          or <span className="text-blue-600 font-black">Weekend Classes</span>.
+          We offer flexible timings and track daily attendance to ensure
+          consistent progress.
+        </>
+      ),
       img: onlineImg,
     },
     {
       title: "🏆 100% Success Guarantee",
-      desc: "We stand by our results with a 100% success guarantee. Upon completion, you'll receive official certification that validates your new-found fluency and professional communication skills.",
+      desc: (
+        <>
+          We stand by our results with a{" "}
+          <span className="text-blue-600 font-black">
+            100% success guarantee
+          </span>
+          . Upon completion, you'll receive{" "}
+          <span className="text-blue-600 font-black">
+            official certification
+          </span>{" "}
+          that validates your new-found fluency and professional communication
+          skills.
+        </>
+      ),
       img: resultsImg,
     },
   ];
