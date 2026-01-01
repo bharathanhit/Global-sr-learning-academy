@@ -171,7 +171,7 @@ export default function SquarefeetPlans() {
                   <span className="text-[#34A853]">l</span>
                   <span className="text-[#EA4335]">e</span>
                 </span> as the
-                <span className="text-blue-900 font-extrabold ml-1.5">Top Educational Institution</span> in Kovaipudur, Coimbatore.
+                <span className="text-blue-900 font-extrabold ml-1.5">Top Educational Institution in</span> <span className="text-blue-900"> Kovaipudur</span> , Coimbatore.
               </p>
             </div>
 

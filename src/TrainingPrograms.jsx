@@ -14,35 +14,57 @@ import supportImg from "./assets/hand.png";
 export default function AboutUs() {
   const services = [
     {
-      title: "🗣️ Interactive Learning",
-      desc: "Our sessions are designed to be highly interactive, ensuring you speak and practice more than just listening. We believe in learning by doing.",
+      title: "🗣️ English through Tamil",
+      desc: "Our unique teaching methodology helps you learn English effortlessly through Tamil, ensuring a comfortable transition and deep understanding of the language.",
       img: interactiveImg,
     },
     {
-      title: "🎯 Personalised Coaching",
-      desc: "Every student's journey is unique. We provide individual attention and tailored feedback to help you overcome your specific challenges.",
+      title: "✍️ Simple Grammar & Vocab",
+      desc: "Forget complex rules. We teach Grammar in a simple, practical way and focus on massive Vocabulary building to help you form sentences with confidence.",
       img: coachingImg,
     },
     {
-      title: "💻 Online Classes Available",
-      desc: "We also offer highly effective online classes for your convenience. Learn from the comfort of your home with our comprehensive virtual training sessions.",
-      img: onlineImg,
-    },
-    {
-      title: "📈 Proven Results",
-      desc: "With over a decade of experience, we have helped thousands of students achieve their fluency goals and gain professional confidence.",
+      title: "📚 Mastery in LRWS",
+      desc: (
+        <>
+          Achieve balanced fluency with all-around training in{" "}
+          <span className="text-blue-600 font-black">
+            Listening, Reading, Writing,<span className="">and</span>  Speaking
+          </span>
+          —the four core pillars of globally recognized language proficiency.
+        </>
+      ),
       img: resultsImg,
     },
-
+    {
+      title: "💼 Professional GD & Interviews",
+      desc: "Stand out in your career with specialized Group Discussion (GD) and Interview training. We prepare you to face corporate challenges with poise and fluency.",
+      img: supportImg,
+    },
+    {
+      title: "🔍 Live Professional Evaluation",
+      desc: "Benefit from 'Live' practice sessions and evaluations by external experts. We provide both Internal & External Evaluation with real-time feedback and questions.",
+      img: coachingImg,
+    },
     {
       title: "📅 40 Focused Sessions",
       desc: "Our academy offers a comprehensive program where you can achieve your goals within 40 sessions, which includes both interactive classes for group practice and focused individual sessions for personalized attention.",
       img: coachingImg,
     },
     {
-      title: "🤝 Lifetime Support",
-      desc: "Our relationship doesn't end with the course. We provide lifetime access to our community and regular alumni catch-up sessions.",
-      img: supportImg,
+      title: "🎯 Personalized Training Sessions",
+      desc: "Get individual attention with one-on-one training sessions tailored to your specific pace. Our instructors focus solely on your growth, identifying areas for improvement and providing instant correction.",
+      img: interactiveImg,
+    },
+    {
+      title: "⏰ Flexible Batches",
+      desc: "Study at your convenience with Monday to Friday batches or Weekend Classes. We offer flexible timings and track daily attendance to ensure consistent progress.",
+      img: onlineImg,
+    },
+    {
+      title: "🏆 100% Success Guarantee",
+      desc: "We stand by our results with a 100% success guarantee. Upon completion, you'll receive official certification that validates your new-found fluency and professional communication skills.",
+      img: resultsImg,
     },
   ];
 
