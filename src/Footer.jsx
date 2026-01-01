@@ -12,11 +12,9 @@ export default function Footer() {
       {/* Overlay (increased opacity with blue tint) */}
       <div className="absolute inset-0 bg-blue-200/60"></div>
 
-      {/* Floating Logo (Black Border) */}
+      {/* Floating Logo (No Border) */}
       <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20">
-        <div className="w-24 h-24 border border-black rounded-full bg-blue-100 flex items-center justify-center shadow-xl overflow-hidden">
-          <img src={logo} alt="Company Logo" className="object-contain w-20 h-20" />
-        </div>
+        <img src={logo} alt="Company Logo" className="object-contain w-20 h-20 sm:w-24 sm:h-24" />
       </div>
 
       {/* Grid Layout */}
@@ -26,6 +24,7 @@ export default function Footer() {
           <div className="space-y-3 text-black drop-shadow-lg">
             <h3 className="text-lg font-bold uppercase tracking-wider text-blue-900">About Us</h3>
             <ul className="space-y-1 font-medium">
+              <li><Link to="/founder" className="hover:text-blue-700">The Founder</Link></li>
               <li><Link to="/niruvanam" className="hover:text-blue-700">The Academy</Link></li>
               <li><Link to="/#services" className="hover:text-blue-700">Our Courses</Link></li>
               <li><Link to="/#contact" className="hover:text-blue-700">Contact Us</Link></li>
@@ -59,13 +58,13 @@ export default function Footer() {
           <a href="#" aria-label="YouTube" className="hover:text-blue-600 transition-colors"><i className="fab fa-youtube"></i></a>
         </div>
         <p className="text-blue-950 text-base italic font-bold">
-          “Unlock Your Potential Through Communication – Global SR Academy”
+          “Unlock Your Potential Through Communication – GLOBAL SR ENGLISH LEARNING ACADEMY”
         </p>
       </div>
 
       {/* Bottom Bar */}
       <div className="relative z-10 mt-10 border-t border-blue-900/10 pt-6 flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto text-sm text-blue-950 gap-2 px-4 text-center md:text-left font-medium">
-        <span>&copy; {new Date().getFullYear()} Global SR English Learning Academy. All rights reserved.</span>
+        <span>&copy; {new Date().getFullYear()} GLOBAL SR ENGLISH LEARNING ACADEMY. All rights reserved.</span>
         <span>Premium Learning <span className="text-blue-600">♥</span> Experience</span>
       </div>
     </footer>

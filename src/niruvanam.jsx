@@ -52,12 +52,10 @@ export default function Niruvanam() {
 
         {/* Grid of Counters */}
         <div className="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-12">
-          <Counter target={12} label="Years Experience" />
-          <Counter target={5000} label="Students Trained" />
+          <Counter target={3} label="Years Experience" />
+          <Counter target={100} label="Students Trained" />
           <Counter target={98} label="Success Rate (%)" />
           <Counter target={25} label="Expert Trainers" />
-          <Counter target={500} label="Corporate Workshops" />
-          <Counter target={100} label="IELTS 8+ Band" />
         </div>
 
         {/* Extra Line */}
@@ -68,7 +66,7 @@ export default function Niruvanam() {
           viewport={{ once: true }}
           className="mt-20 text-xl md:text-3xl font-bold text-blue-950 max-w-4xl mx-auto leading-relaxed"
         >
-          <span className="text-blue-600">Global SR Academy</span> –
+          <span className="text-blue-600">GLOBAL SR ENGLISH LEARNING ACADEMY</span> –
           From *Basic Grammar to Professional Eloquence*, we guide you at every step of your language journey.
         </motion.p>
       </div>

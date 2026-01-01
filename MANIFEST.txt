@@ -1,0 +1,4 @@
+Global SR Academy Project Manifest
+Date: 2025-12-23
+Repo: https://github.com/bharathanhit/Global-sr-learning-academy.git
+Files: index.html, src, public, package.json

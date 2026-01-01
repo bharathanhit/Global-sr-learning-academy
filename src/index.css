@@ -5,20 +5,40 @@
 
 /* Apply gradient to entire body without touching HTML or JSX */
 body {
-  @apply m-0 p-0 min-h-screen bg-gradient-to-b from-[#001F3F] to-[#CCCCCC] text-white;
+  @apply m-0 p-0 min-h-screen bg-gradient-to-b from-[#001F3F] to-[#CCCCCC] text-white select-none;
+  -webkit-user-select: none;
+  /* Safari */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* IE10+/Edge */
 }
+
+/* Allow selection in inputs and textareas */
+input,
+textarea {
+  @apply select-text;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+}
+
 .perspective {
-  perspective: 1000px;
+  perspective: 1500px;
 }
+
 .preserve-3d {
   transform-style: preserve-3d;
 }
+
 .backface-hidden {
   backface-visibility: hidden;
 }
+
 .rotate-y-180 {
   transform: rotateY(180deg);
 }
+
 .ripple-effect {
   position: absolute;
   border-radius: 9999px;
@@ -35,4 +55,34 @@ body {
     opacity: 0;
   }
 }
+
 /* Removed JavaScript configuration block */
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+@keyframes bounce-subtle {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-3px);
+  }
+}
+
+.animate-bounce-subtle {
+  animation: bounce-subtle 3s ease-in-out infinite;
+}

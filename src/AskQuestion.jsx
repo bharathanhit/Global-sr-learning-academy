@@ -5,8 +5,11 @@ import { FaWhatsapp } from 'react-icons/fa';
 const AcademyHelpSection = () => {
   const [formData, setFormData] = useState({ name: '', question: '' });
   const [faqs] = useState([
-    { q: 'What are the batch timings?', a: 'We have flexible batches: Morning (7 AM - 9 AM), Afternoon (2 PM - 4 PM), and Evening (6 PM - 8 PM).' },
-    { q: 'Do you provide IELTS/PTE study material?', a: 'Yes, we provide comprehensive study materials, practice tests, and recorded sessions for all our students.' },
+    {
+      q: 'What are the batch timings?',
+      a: 'Monday - Friday: 9:00 AM – 1:00 PM & 3:00 PM – 8:00 PM | Saturday: 9:00 AM – 1:00 PM & 3:00 PM – 8:00 PM | Sunday: 9:00 AM – 1:00 PM & 3:00 PM – 8:00 PM'
+    },
+    { q: 'Do you provide  study material?', a: 'Yes, we provide comprehensive study materials, practice tests, and recorded sessions for all our students.' },
     { q: 'Is there a demo class available?', a: 'Absolutely! You can book a free 30-minute orientation session to experience our teaching methodology.' },
     { q: 'Do you offer online classes?', a: 'Yes, we offer live interactive online classes for students who cannot attend our Madurai center.' },
   ]);
@@ -19,7 +22,7 @@ const AcademyHelpSection = () => {
 
   const handleSubmit = e => {
     e.preventDefault();
-    const message = `Hi, my name is ${formData.name}. I have a query about Global SR Academy: ${formData.question}`;
+    const message = `Hi, my name is ${formData.name}. I have a query about GLOBAL SR ENGLISH LEARNING ACADEMY: ${formData.question}`;
     const url = `https://wa.me/7339310823?text=${encodeURIComponent(message)}`;
     window.open(url, '_blank');
   };
@@ -30,7 +33,7 @@ const AcademyHelpSection = () => {
 
         {/* FAQ Section */}
         <div className="bg-white p-8 md:p-12 rounded-3xl shadow-2xl border border-blue-100">
-          <h2 className="text-3xl font-black mb-6 text-blue-950">Global SR Academy - FAQ</h2>
+          <h2 className="text-3xl font-black mb-6 text-blue-950">GLOBAL SR ENGLISH LEARNING ACADEMY - FAQ</h2>
           <p className="text-gray-600 mb-8 font-medium">Quick answers to common questions about our courses and enrollment.</p>
 
           <div className="space-y-4">

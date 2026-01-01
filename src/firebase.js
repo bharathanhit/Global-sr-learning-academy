@@ -1,24 +1,27 @@
- // Import the functions you need from the SDKs
+// Import the functions you need from the SDKs
 import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
 import { getFirestore } from "firebase/firestore";
-import { getStorage } from "firebase/storage";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDO5CEyGuzoGpMKvwtZamalSYfeP8Vwplg",
-  authDomain: "meenakshi-52866.firebaseapp.com",
-  projectId: "meenakshi-52866",
-  storageBucket: "meenakshi-52866.appspot.com",
-  messagingSenderId: "1034881111900",
-  appId: "1:1034881111900:web:93b52bec5bda14c4685399"
+  apiKey: "AIzaSyBnm_OQBNX-fzEVB_dA2oY8jPMtXKt_ZGA",
+  authDomain: "golbalsr.firebaseapp.com",
+  projectId: "golbalsr",
+  storageBucket: "golbalsr.firebasestorage.app",
+  messagingSenderId: "207687509158",
+  appId: "1:207687509158:web:5199a3caf706ef583cc067",
+  measurementId: "G-W4H5FDGL89"
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
-// Initialize Firestore and Storage
+// Initialize Analytics
+const analytics = getAnalytics(app);
+
+// Initialize Firestore
 const db = getFirestore(app);
-const storage = getStorage(app);
 
 // Export Firebase modules
-export { app, db, storage };
+export { app, db, analytics };

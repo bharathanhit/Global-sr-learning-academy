@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { MdLocationOn, MdEmail, MdPhone } from 'react-icons/md';
 import { FaFacebook, FaInstagram, FaWhatsapp } from 'react-icons/fa';
-import { FaXTwitter } from 'react-icons/fa6';
 import { BiMessageDetail } from 'react-icons/bi';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
@@ -22,40 +21,56 @@ export default function ContactGrid() {
 
   // 📞 Handle phone click
   const handlePhoneClick = () => {
+    const phoneNumber = "9345759037";
     if (/Mobi|Android/i.test(navigator.userAgent)) {
-      window.location.href = "tel:+918778671208"; // 📱 Mobile dialer
+      window.location.href = `tel:+91${phoneNumber}`;
     } else {
       try {
-        navigator.clipboard.writeText("8778671208");
+        navigator.clipboard.writeText(phoneNumber);
         setToast("📋 Phone number copied");
       } catch (err) {
-        setToast("⚠ Copy failed. Please copy manually");
+        setToast("⚠ Copy failed");
       }
     }
   };
 
   // ✅ Handle WhatsApp click
   const handleWhatsAppClick = () => {
-    const url = "https://wa.me/918778671208";
+    const url = "https://wa.me/919345759037";
     try {
-      navigator.clipboard.writeText("https://wa.me/918778671208");
+      navigator.clipboard.writeText(url);
       setToast("📋 WhatsApp link copied");
     } catch {
-      setToast("⚠ Copy failed. Please open manually");
+      setToast("📋 WhatsApp: 9345759037");
     }
     window.open(url, "_blank");
+  };
+
+  // ✉️ Handle Email click
+  const handleEmailClick = () => {
+    const email = "globalsr2022@gmail.com";
+    setToast("✉️ Opening your email app...");
+
+    // Copy as backup
+    try {
+      navigator.clipboard.writeText(email);
+      setTimeout(() => setToast("📧 Email copied to clipboard"), 1500);
+    } catch (err) { }
+
+    // Trigger mailto
+    window.location.href = `mailto:${email}`;
   };
 
   const contactInfo = [
     {
       icon: <MdLocationOn size={40} />,
       label: 'Main Center',
-      href: 'https://maps.google.com',
+      href: 'https://www.google.com/maps/place/GLOBAL+SR+ENGLISH+LEARNING+ACADEMY+(Spoken+English+through+Tamil)/@10.9424,76.9344,17z/data=!4m6!3m5!1s0x3ba8591e33028909:0xc7a585f6d48f67f2!8m2!3d10.9423928!4d76.9344337!16s%2Fg%2F11t1ddpffj?hl=en&entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoKLDEwMDc5MjA2N0gBUAM%3D',
     },
     {
       icon: <MdEmail size={40} />,
       label: 'Email Us',
-      href: 'mailto:contact@globalsr.edu',
+      onClick: handleEmailClick,
     },
     {
       icon: <MdPhone size={40} />,
@@ -65,7 +80,7 @@ export default function ContactGrid() {
     {
       icon: <FaInstagram size={40} />,
       label: 'Instagram',
-      href: 'https://www.instagram.com/global_sr_academy',
+      href: 'https://www.instagram.com/globalsr2022?utm_source=qr&igsh=MXMxcTNzcWZvd3poMw==',
     },
     {
       icon: <FaWhatsapp size={40} />,
@@ -75,7 +90,7 @@ export default function ContactGrid() {
     {
       icon: <FaFacebook size={40} />,
       label: 'Facebook',
-      href: 'https://www.facebook.com/GlobalSRAcademy',
+      href: 'https://www.facebook.com/share/1ATSEn7iew/',
     },
   ];
 

@@ -1,4 +1,15 @@
- User-agent: *
+# Global SR English Learning Academy - Robots.txt
+# This file tells search engines how to crawl our website
+
+User-agent: *
 Allow: /
 
-Sitemap: https://meenakshi-construction.com/sitemap.xml
+# Disallow admin or private areas (if any in future)
+# Disallow: /admin/
+# Disallow: /private/
+
+# Sitemap location
+Sitemap: https://globalsr.edu/sitemap.xml
+
+# Crawl-delay (optional, helps prevent server overload)
+Crawl-delay: 1
